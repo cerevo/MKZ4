@@ -16,7 +16,7 @@ MKZ4
 ## Demo
 /Cerevo_MKZ4/Cerevo_MKZ4.inoがサンプルプログラムになります。  
 ESP8266を追加したArduino IDEでビルドしてください。  
-※ボードマネージャーのVerは2.2.0で動作確認をしています。  
+※ボードマネージャーのesp8266のVerは2.2.0で動作確認をしています。  
 
 ## Licence
 

@@ -51,7 +51,7 @@ ESP8266WebServer server_8080(8080);
 #define forward       0x01
 #define reverse       0x02
 #define servo_left    65
-#define servo_right   115
+#define servo_right   110
 
 #define LED_H       (digitalWrite( 12, HIGH ))
 #define LED_L       (digitalWrite( 12, LOW ))
@@ -210,6 +210,7 @@ void handle_back() {
   Serial.print("back\r\n");
   back();
   servo_control(90);
+  server.send(200, "text/html", "");
 }
 
 void handle_left(){
