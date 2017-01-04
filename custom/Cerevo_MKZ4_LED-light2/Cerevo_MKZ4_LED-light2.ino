@@ -35,7 +35,7 @@
 #include <ESP8266WebServer.h>
 
 /* Set these to your desired credentials. */
-const char *ssid = "MKZ4_Light";
+const char *ssid = "MKZ4_Light2_**";
 const char *password = "";
 
 ESP8266WebServer server(80);
