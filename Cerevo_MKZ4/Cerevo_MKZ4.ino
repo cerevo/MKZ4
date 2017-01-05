@@ -57,7 +57,7 @@ ESP8266WebServer server_8080(8080);
 #define LED_L       (digitalWrite( 12, LOW ))
 
 char state = command_stop;
-int offset = 0;
+int offset = 10;
 
 String form ="<html>"
 "<head>"
@@ -196,54 +196,54 @@ void handle_stop() {
     stop_motor();
     state = command_stop;
   LED_H;
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_forward() {
  Serial.print("forward\r\n");
   drive();
   servo_control(90);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_back() {
   Serial.print("back\r\n");
   back();
   servo_control(90);
-  server.send(200, "text/html", "");
+  server_8080r.send(200, "text/html", "");
 }
 
 void handle_left(){
   Serial.print("left\r\n");
   servo_control(servo_left);
-  server.send(200, "text/html", "");
+  server_8080r.send(200, "text/html", "");
 }
 
 void handle_right(){
   Serial.print("right\r\n");
   servo_control(servo_right);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_f_left(){
   Serial.print("f_left\r\n");
   drive();
   servo_control(servo_left);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_f_right(){
   Serial.print("f_right\r\n");
   drive();
   servo_control(servo_right);
- server.send(200, "text/html", "");
+ server_8080.send(200, "text/html", "");
 }
 
 void handle_b_left(){
   Serial.print("b_left\r\n");
   back();
   servo_control(servo_left );
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 
@@ -251,7 +251,7 @@ void handle_b_right(){
   Serial.print("b_right\r\n");
   back();
   servo_control(servo_right);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void drive(){
