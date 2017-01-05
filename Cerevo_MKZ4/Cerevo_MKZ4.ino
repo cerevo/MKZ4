@@ -210,13 +210,13 @@ void handle_back() {
   Serial.print("back\r\n");
   back();
   servo_control(90);
-  server_8080r.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_left(){
   Serial.print("left\r\n");
   servo_control(servo_left);
-  server_8080r.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_right(){
