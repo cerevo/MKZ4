@@ -173,14 +173,14 @@ void handle_stop() {
     stop_motor();
     state = command_stop;
   LED_L;
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_drive() {
  Serial.print("drive\r\n");
   drive();
   servo_control(90);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_back() {
@@ -193,14 +193,14 @@ void handle_left(){
   Serial.print("left\r\n");
    //drive();
   servo_control(servo_left);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void handle_right(){
   Serial.print("right\r\n");
   // drive();
   servo_control(servo_right);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 
@@ -208,7 +208,7 @@ void handle_f_left(){
   Serial.print("f_left\r\n");
   drive();
   servo_control(servo_left);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 
@@ -216,14 +216,14 @@ void handle_f_right(){
   Serial.print("f_right\r\n");
   drive();
   servo_control(servo_right);
- server.send(200, "text/html", "");
+ server_8080.send(200, "text/html", "");
 }
 
 void handle_r_left(){
   Serial.print("r_left\r\n");
   back();
   servo_control(servo_left);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 
@@ -231,7 +231,7 @@ void handle_r_right(){
   Serial.print("r_right\r\n");
   back();
   servo_control(servo_right);
-  server.send(200, "text/html", "");
+  server_8080.send(200, "text/html", "");
 }
 
 void drive(){
