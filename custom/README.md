@@ -6,7 +6,7 @@
 
 - Cerevo_MKZ4_LED-light :本体にLEDを追加してPWMで点灯させるサンプル。  
 
-- Cerevo_MKZ4_LED-light2 :本体にLEDライト（フロントのみを想定）追加して走行時明るく光らせるするサンプル。
+- Cerevo_MKZ4_LED-light2 :本体にLEDライト（フロントのみを想定）追加して走行時明るく光らせるサンプル。
 
 - Cerevo_MKZ4_calib :UARTからoffset,left,rightの値を修正できるコマンドを追加。
 
