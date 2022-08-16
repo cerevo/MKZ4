@@ -4,12 +4,12 @@ M5 cameraXにて動作確認をしています。他のデバイスを使う場�
 
 MKZ4との接続は以下の通りです。また[Cervoブログの記事](https://tech-blog.cerevo.com/)も参照してみてください。（制作的なことはざっくりとしか書いていないです。すみません。）
 
-![Office Circuit](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/OfficeRace.gif)
+![Office Circuit](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/OfficeRace.gif)
 
-![View from above](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/Above.jpg)
+![View from above](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/Above.jpg)
 
 ## System
-![System](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/System.png)
+![System](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/System.png)
 
 ## Important Note
 - 電源スイッチを入れるときにEP32とUART端子が接続されているとMKZ4基板が起動しない（LEDが点灯しない）ため、UART端子を外してから電源スイッチを入れ、それからUART端子を再度接続するようにしてください。
@@ -33,8 +33,8 @@ ESP32カメラ（Grobeコネクタ）とMKZ4を以下のように接続します
 | Pin3(Black)         | GND   |
 | Pin4(Red)           | Batt+ |
 
-![Top](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/Top.jpg)
-![Wiring](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/Wiring.jpg)
+![Top](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/Top.jpg)
+![Wiring](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/Wiring.jpg)
 
 
 ## セットアップ起動手順
@@ -48,7 +48,7 @@ ESP32カメラ（Grobeコネクタ）とMKZ4を以下のように接続します
 - 画面下部の十字エリア中心部をタッチし（指を離さないまま）上の方にスライドします。MKZ4のモーターが回りましたか？
 - 同様に左右方向に指をスライドさせるとステアリングが動きます。
 - 下方向にスライドさせるとモーターが反転して回ります。
-![From Ipad](https://raw.githubusercontent.com/cerevo/MKZ4/master/Pics/ControlFromIpad.gif)
+![From Ipad](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/ControlFromIpad.gif)
 
 
 ## 技術情報
