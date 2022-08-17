@@ -2,7 +2,7 @@
 MKZ4にESP32カメラを接続し、カメラの画像を見ながらラジコン操作ができるプロジェクトです。
 M5 cameraXにて動作確認をしています。他のデバイスを使う場合はCameraWebServer.ino内で対象のカメラモデルを選択してください。
 
-MKZ4との接続は以下の通りです。また[Cervoブログの記事](https://tech-blog.cerevo.com/)も参照してみてください。（制作的なことはざっくりとしか書いていないです。すみません。）
+MKZ4との接続は以下の通りです。また[Cervoブログの記事](https://tech-blog.cerevo.com/archives/12014/)も参照してみてください。（制作的なことはざっくりとしか書いていないです。すみません。）
 
 ![Office Circuit](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/OfficeRace.gif)
 
@@ -48,6 +48,7 @@ ESP32カメラ（Grobeコネクタ）とMKZ4を以下のように接続します
 - 画面下部の十字エリア中心部をタッチし（指を離さないまま）上の方にスライドします。MKZ4のモーターが回りましたか？
 - 同様に左右方向に指をスライドさせるとステアリングが動きます。
 - 下方向にスライドさせるとモーターが反転して回ります。
+
 ![From Ipad](https://raw.githubusercontent.com/cerevo/MKZ4/master/custom/MKZ4Camera/Pics/ControlFromIpad.gif)
 
 
